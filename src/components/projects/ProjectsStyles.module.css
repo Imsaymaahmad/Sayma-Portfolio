@@ -1,0 +1,25 @@
+.container {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 30px
+}
+  
+ .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  @media (width >= 800px) {
+    .projectsContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 30px;
+    }
+  }
+  
