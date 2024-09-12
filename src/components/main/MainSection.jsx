@@ -9,7 +9,7 @@ import githubLight from '../../assets/github-light.svg'
 import githubDark from '../../assets/github-dark.svg'
 import linkedinLight from '../../assets/linkedin-light.svg'
 import linkedinDark from '../../assets/linkedin-dark.svg'
-import Resume from '../../assets/Sayma-Resume.pdf'
+// import Resume from '../../assets/Sayma-Resume.pdf'
 import { useTheme } from '../../theme/ThemeContext'
 
 
@@ -31,7 +31,8 @@ function MainSection() {
          </div>
 
          <div className={styles.info}>
-            <h1>SAYMA AHMAD</h1>
+            {/* <h1>SAYMA AHMAD</h1> */}
+            <p className={styles.description}>Hey there, I am <b>Sayma Ahmad.</b> <br />An Aspiring Software Developer. Passionate and driven individual. </p>
             <span id='span'>
                 <a href="https://x.com/Sayma_ahmadd" target='_blank'>
                     <img src={twitterIcon} alt="Twitter Icon" />
@@ -43,9 +44,9 @@ function MainSection() {
                     <img src={linkedinIcon} alt="Linkedin Icon" />
                 </a>
             </span>
-            <p className={styles.description}>An Aspiring Software Developer. Passionate and driven individual. </p>
-            <a href={Resume} download>
-                <button className='hover'>Resume</button>
+           
+            <a href="#" download>
+                <button className='hover'>Contact</button>
             </a>
          </div>
     </section>
